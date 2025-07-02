@@ -5,4 +5,4 @@ def __yas_hesabla(il):
 dogum_ili = int(input("Dogum ilinizi daxil edin: "))
 yas = yas_hesabla(dogum_ili)
 
-print("Yaşınız:", yas)
+print("Yasınız:", yas)
