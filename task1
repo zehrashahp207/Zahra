@@ -5,5 +5,5 @@ class Avtomobil:
         self.reng = reng 
     def tesvir(self):
         print(f"Bu avtomobil {self.marka} markalidir, {self.il}-ci ilindir, {self.reng} renglidir.")
-mənim_avtomobilim = Avtomobil("Toyota", 2015, "qırmızı")
-mənim_avtomobilim.tesvir()
+menim_avtomobilim = Avtomobil("Toyota", 2015, "qırmızı")
+menim_avtomobilim.tesvir()
