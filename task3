@@ -3,6 +3,6 @@ def __yas_hesabla(il):
     return yas
     
 dogum_ili = int(input("Dogum ilinizi daxil edin: "))
-yas = yas_hesabla(dogum_ili)
+yas = __yas_hesabla(dogum_ili)
 
 print("Yasınız:", yas)
