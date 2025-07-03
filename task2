@@ -13,6 +13,6 @@ class Insan:
             return "boyuk"
         else:
             return "qoca"
-yas = int(input("Yaşınızı daxil edin: "))
+yas = int(input("Yasinizi daxil edin: "))
 insan = Insan(yas)
 print(insan.kateqoriya())
