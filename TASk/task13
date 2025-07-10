@@ -1,20 +1,19 @@
 gunler = {
-    1: "Bazar ertəsi",
-    2: "Çərşənbə axşamı",
-    3: "Çərşənbə",
-    4: "Cümə axşamı",
-    5: "Cümə",
-    6: "Şənbə",
+    1: "Bazar ertesi",
+    2: "Cersenbe axsami",
+    3: "Cersenbe",
+    4: "Cume axsami",
+    5: "Cume",
+    6: "Senbe",
     7: "Bazar"
 }
 
 while True:
     try:
-        eded = int(input("1-dən 7-yə qədər bir tam ədəd daxil et: "))
+        eded = int(input("1-den 7-ye qeder bir tam eded daxil et: "))
         if 1 <= eded <= 7:
             print(gunler[eded])
-            break  # Düzgün ədəd daxil edildikdə dövrdən çıxırıq
         else:
-            print("Belə bir gün yoxdur, yenidən cəhd et.")
-    except:
-        print("Zəhmət olmasa, tam ədəd daxil et.")
+            print("Bele bir gün yoxdur, yeniden cehd et.")
+    except ValueError:
+        print("Zehmet olmasa, tam eded daxil et.")
