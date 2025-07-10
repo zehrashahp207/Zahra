@@ -1,0 +1,12 @@
+teref1 = float(input("Birinci tərəf: "))
+teref2 = float(input("İkinci tərəf: "))
+teref3 = float(input("Üçüncü tərəf: "))
+
+if teref1 == teref2 == teref3:
+    print("Bərabərtərəfli üçbucaq")
+elif teref1 == teref2 or teref2 == teref3 or teref1 == teref3:
+    print("Bərabəryanlı üçbucaq")
+elif teref1 == teref2 == teref3 == 0
+    print ("Bele ucbucaq yoxdu")
+else:
+    print("Üçbucaq müxtəlif tərəflidir")
