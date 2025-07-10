@@ -6,7 +6,7 @@ if teref1 == teref2 == teref3:
     print("Bərabərtərəfli üçbucaq")
 elif teref1 == teref2 or teref2 == teref3 or teref1 == teref3:
     print("Bərabəryanlı üçbucaq")
-elif teref1 == teref2 == teref3 == 0
+elif teref1 <= 0 or teref2 <= 0 or teref3 <= 0:
     print ("Bele ucbucaq yoxdu")
 else:
     print("Üçbucaq müxtəlif tərəflidir")
