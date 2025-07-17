@@ -1,0 +1,16 @@
+class Temperatur:
+    def __init__(self, derece):
+        self.derece = derece
+
+    def hava_seraiti(self):
+        if self.derece <= 0:
+            return "Cox soyuqdur."
+        elif self.derece <= 20:
+            return "Serin havadir."
+        elif self.derece <= 35:
+            return "Iliq ve guneslidir."
+        else:
+            return "Cox istidir."
+derece = float(input("Dereceni daxil edin:"))
+temp = Temperatur(derece)
+print(temp.hava_veziyyeti())
