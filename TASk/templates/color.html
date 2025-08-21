@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Reng melumati</title>
+</head>
+<body>
+    <h1>Reng haqqinda melumat</h1>
+    <form method="POST">
+        <button type="submit" name="color" value="qirmizi" style="background-color: red; color: white; padding:10px 20px; margin:10px; border:none; cursor:pointer;">Qirmizi</button>
+        <button type="submit" name="color" value="mavi" style="background-color: blue; color: white; padding:10px 20px; margin:10px; border:none; cursor:pointer;">Mavi</button>
+        <button type="submit" name="color" value="yasil" style="background-color: green; color: white; padding:10px 20px; margin:10px; border:none; cursor:pointer;">Yasil</button>
+        <button type="submit" name="color" value="sari" style="background-color: yellow; color: black; padding:10px 20px; margin:10px; border:none; cursor:pointer;">Sari</button>
+        <button type="submit" name="color" value="qara" style="background-color: black; color: white; padding:10px 20px; margin:10px; border:none; cursor:pointer;">Qara</button>
+    </form>
+
+    {% if message %}
+        <div style="margin-top:20px;">
+            <p style="color: {{ text_color }}; font-weight: bold;">
+                {{ color_name.capitalize() }}: {{ message }}
+            </p>
+        </div>
+    {% endif %}
+</body>
+</html>

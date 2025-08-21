@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reng Tanima</title>
+</head>
+<body>
+    <h1>Reng Tanima Proqrami</h1>
+    <form method="POST">
+        <label>Reng adi daxil edin:</label><br>
+        <input type="text" name="color" required>
+        <button type="submit">Yoxla</button>
+    </form>
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+</body>
+</html>

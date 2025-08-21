@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sadə Blog</title>
+</head>
+<body>
+    <h1>Sadə Blog</h1>
+    <a href="{{ url_for('add_post') }}">Yeni Post</a>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{{ url_for('view_post', post_id=loop.index0) }}">{{ post.title }}</a>
+            </li>
+        {% else %}
+            <li>Hələ post yoxdur.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

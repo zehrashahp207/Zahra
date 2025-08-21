@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Gundelik Planlayici</title>
+</head>
+<body>
+    <h1>Gundelik Planlarinizi Yazin</h1>
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        Adiniz: <input type="text" name="ad" required><br><br>
+        Gun: <input type="text" name="gun" required><br><br>
+
+        Fealiyyet 1: <input type="text" name="plan1" required><br><br>
+        Fealiyyet 2: <input type="text" name="plan2"><br><br>
+        Fealiyyet 3: <input type="text" name="plan3"><br><br>
+
+        <button type="submit">Plani Yarat</button>
+    </form>
+</body>
+</html>

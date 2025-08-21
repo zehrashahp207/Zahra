@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Netice</title>
+</head>
+<body>
+    <h1>{{ ad }} - {{ hefte }}</h1>
+
+    <h3>Gunler uzre xercler:</h3>
+    <ul>
+        {% for qiymet in xerc_list %}
+            <li>{{ qiymet }} AZN</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Umumi mebleg: {{ total }} AZN</h3>
+
+    <a href="/">Yeni hesablama et</a>
+</body>
+</html>

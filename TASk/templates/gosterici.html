@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ ad }} ucun Plan</title>
+</head>
+<body>
+    <h1>{{ gun }} ucun Planiniz</h1>
+    <h2>{{ ad }}</h2>
+
+    <ul>
+        {% for item in planlar %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Yeni Plan Yarat</a>
+</body>
+</html>

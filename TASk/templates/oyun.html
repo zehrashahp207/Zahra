@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Dil Tercume</title>
+</head>
+<body>
+    <h1>Dil Tercume oyunu</h1>
+    
+    <p>Tercume et: <strong>{{ ing_soz }}</strong></p>
+
+    {% if mesaj %}
+        <p><em>{{ mesaj }}</em></p>
+    {% endif %}
+
+    <form method="POST">
+        <input type="hidden" name="ing_soz" value="{{ ing_soz }}">
+        Tercumen: <input type="text" name="cevrilen" autocomplete="off" required>
+        <button type="submit">Yoxla</button>
+    </form>
+</body>
+</html>

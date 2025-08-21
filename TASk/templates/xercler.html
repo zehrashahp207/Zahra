@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Sade Xerc Gostericisi</title>
+</head>
+<body>
+    <h1>Heftelik xerc gostericisi</h1>
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        Adiniz: <input type="text" name="ad" required><br><br>
+        Heftenin adi: <input type="text" name="hefte" required><br><br>
+
+        {% for i in range(1, 8) %}
+            Gun {{ i }} xerci: <input type="number" step="0.01" name="qiymet{{ i }}"><br><br>
+        {% endfor %}
+
+        <button type="submit">Hesabla</button>
+    </form>
+</body>
+</html>

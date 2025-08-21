@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+</head>
+<body>
+    <h1>Salam, {{ ad }}!</h1>
+    <p>Yaşiniz: {{ yas }}</p>
+
+    <h2>Maraqlariniz:</h2>
+    <ul>
+        {% for maraq in maraqlar %}
+            <li>{{ maraq }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if yas >= 18 %}
+        <p>Siz yetkin yaşdasiniz.</p>
+    {% else %}
+        <p>Siz hələ yetkin deyilsiniz.</p>
+    {% endif %}
+</body>
+</html>

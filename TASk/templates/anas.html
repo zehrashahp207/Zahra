@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Tahmin Et Oyunu</title>
+</head>
+<body>
+    <h1>1-dən 20-yə qədər bir rəqəm tapmağa çalış!</h1>
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+
+    <form method="POST">
+        Rəqəminizi daxil edin: <input type="number" name="guess" min="1" max="20" required>
+        <button type="submit">Gonder</button>
+    </form>
+</body>
+</html>

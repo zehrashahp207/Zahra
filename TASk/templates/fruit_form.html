@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Meyvə Formasi</title>
+</head>
+<body>
+    <h1>Meyvə Qəbulu Formasi</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+        <label>Adiniz:</label><br>
+        <input type="text" name="ad"><br><br>
+
+        <label>Gündə neçə porsiya meyvə yeyirsiniz?</label><br>
+        <input type="number" name="porsiya" min="0"><br><br>
+
+        <label>Şəkərli meyvələri sevirsiniz?</label><br>
+        <input type="radio" name="sekerli" value="beli"> Bəli<br>
+        <input type="radio" name="sekerli" value="xeyr"> Xeyr<br><br>
+
+        <input type="submit" value="Göndər">
+    </form>
+</body>
+</html>

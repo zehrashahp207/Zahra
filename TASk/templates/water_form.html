@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Su Qebulu Formasi</title>
+</head>
+<body>
+    <h1>Gunde ne qeder su icirsiniz?</h1>
+    {% if error %}
+        <p style="color:red;">{{error}}</p>
+    {% endif %}
+    <form method="POST">
+        Adiniz: <input type="text" name="ad" required><br><br>
+        Gun erzinde nece litr su icdiniz? <input type="number" name="su" step="0.1" min="0" required><br><br>
+        Bu gun idman etdiniz? 
+        <select name="mesq" required>
+            <option value="">Seçin</option>
+            <option value="beli">Beli</option>
+            <option value="xeyr">Xeyr</option>
+        </select><br><br>
+        <button type="submit">Yoxla</button>
+    </form>
+</body>
+</html>

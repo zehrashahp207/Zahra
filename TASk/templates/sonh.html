@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>Xatireler</title>
+</head>
+<body>
+    <h1>Evvelki Xatireler</h1>
+
+    {% if xatireler %}
+        <ul>
+            {% for xatire in xatireler %}
+                <li><strong>{{ xatire.basliq }}</strong><br>{{ xatire.metn }}</li><br>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Hec bir xatire yoxdur.</p>
+    {% endif %}
+
+    <a href="{{ url_for('home') }}">Yeni xatirə yaz</a>
+</body>
+</html>

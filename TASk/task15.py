@@ -34,7 +34,7 @@ Elaqe nomresi:050 *** ** **<h4>
 def layihe():
     return"""
 <h2>Layihe</h2>
-Men sosial isciyem,sosial isle elaqeli problemlerinizle baqli muraciet ede bilersiz:))<br>
+Men sosial isciyem,sosial isle elaqeli problemlerinizle bagli muraciet ede bilersiz:))<br>
 <a href="/">Geri qayit</a>
 """
 
