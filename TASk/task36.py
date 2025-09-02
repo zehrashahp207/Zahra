@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 import random
 
 app = Flask(__name__)
-
+  
 # Sadə söz-lüğət nümunəsi (ing - az)
 sozluk = {
 "apple": "alma",
